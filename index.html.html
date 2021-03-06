@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>website2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top" >
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#sd" class="w3-bar-item w3-button">Software Development</a>
+        <a href="#ds" class="w3-bar-item w3-button">Data Science</a>
+        <a href="#f" class="w3-bar-item w3-button">Finance</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#sd" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MORE</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <br>
+  <div id="about" class="w3-content w3-margin-top" style="max-width:1400px;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+      <!-- Left Column -->
+      <div class="w3-third">
+
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <img src="https://scontent.fdel1-4.fna.fbcdn.net/v/t1.0-9/70396121_378057983124460_9035001235177996288_o.jpg?_nc_cat=105&ccb=3&_nc_sid=09cbfe&_nc_ohc=k2x9Jb-PJlgAX9XV7FX&_nc_ht=scontent.fdel1-4.fna&oh=b64728c8de4e46bfe959971e655568c7&oe=60687572" style="width:100%" alt="Avatar">
+            <div class="w3-display-bottomleft w3-container w3-text-white">
+              <h2>Meghul Tyagi</h2>
+            </div>
+          </div>
+          <div class="w3-container">
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Explorer</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>IIT Roorkee</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>meghultyagi@gmail.com</p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>1224435534</p>
+            <hr>
+
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-black"></i>Skills</b></p>
+            <p>Problem Solving</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:100%">100%</div>
+            </div>
+            <p>Data Science</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:45%">45%</div>
+            </div>
+            <p>Software Development</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:40%">
+                <div class="w3-center w3-text-white">40%</div>
+              </div>
+            </div>
+            <p>Finance</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:10%">10%</div>
+            </div><br>
+
+            <br>
+          </div>
+        </div><br>
+
+      <!-- End Left Column -->
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-twothird">
+
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>About me</h2>
+          <div class="w3-container">
+            <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Born on <span class="w3-tag w3-black w3-round">Nov 1,1999</span></h6>
+            <h5 class="w3-opacity"><b>Upcoming Data Analyst at American Express | Mathematics Enthusiast | IIT Roorkee</b></h5>
+            <p>I am Meghul, a civil engineering undergrad at IIT Roorkee.I am motivated to find technical solutions for real-life problems. My enthusiasm for mathematics adds problem-solving and managerial skills to me. Leading egagements in social service, dramatics and taekwondo have polished me as a better individual with sound time management and teamwork.</p>
+            <hr>
+          </div>
+
+        </div>
+
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Education</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>IIT Roorkee</b></h5>
+            <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018-2022</h6>
+            <p>B.Tech Civil Engineering with minor spacialisation in Applied Mathematics</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>DPS Rajnagar</b></h5>
+            <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
+            <p>Twelfth</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Kendriya Vidyalaya, O.F.M</b></h5>
+            <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+            <p>Tenth</p><br>
+          </div>
+        </div>
+
+      <!-- End Right Column -->
+      </div>
+
+    <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+  </div>
+
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="projects">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">PROJECTS</h2>
+
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://images.idgesg.net/images/article/2017/05/security-software-programmer_primary-100724510-large.jpg" alt="Software Development" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Software Development</b></p>
+            <p>The projects I undertook during my journey with Explorin.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Projects</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.openaccessgovernment.org/wp-content/uploads/2019/06/dreamstime_m_140084029.jpg" alt="Data Science" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Data Science</b></p>
+            <p>The projects I undertook during my journey with Explorin.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Projects</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.financederivative.com/wp-content/uploads/2019/02/image-from-rawpixel-id-497090-jpeg.jpg" alt="Finance" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Finance</b></p>
+            <p>The projects I undertook during my journey with Explorin.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Projects</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:100%" id="band">
+    <h2 id="sd" class="w3-third">Software Development</h2>
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+
+        <!-- Left Column -->
+        <div class="w3-third">
+
+          <div class="w3-white w3-text-grey w3-card-4">
+            <div class="w3-display-container">
+              <img src="https://images.idgesg.net/images/article/2017/05/security-software-programmer_primary-100724510-large.jpg" style="width:100%" alt="Avatar">
+            </div>
+          </div><br>
+
+        <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+
+          <div class="w3-container" style="text-align: left; padding-left: 50px">
+            <h5 class="w3-opacity"><b><a href="https://meghultyagi.github.io/day2/">Mastering Style with CSS- Day 2</a></b></h5>
+            <p>Used HTML,CSS to create a web page</p>
+            <hr>
+            <h5 class="w3-opacity"><b><a href="https://meghultyagi.github.io/day3/">Positioning 101 using Flexbox- Day 3</a></b></h5>
+            <p>Made a custom Flexbox</p>
+            <hr>
+            <h5 class="w3-opacity"><b><a href="https://meghultyagi.github.io/day4/">Upskilling with Javascript- Day 4</a></b></h5>
+            <p>Created a calculator to split the given amount in given number of people using JS,HTML & CSS</p>
+            <hr>
+            <h5 class="w3-opacity"><b><a href="https://meghultyagi.github.io/day5/">It's Show Time- Week 1</a></b></h5>
+            <p>Made a website using flexbox and Created my own portfolio and hosted it on Github</p>
+            <hr>
+            <h5 class="w3-opacity"><b><a href="https://meghultyagi.github.io/youtubeapi/">Youtube api</a></b></h5>
+            <p>Made a website using to get videos from youtube using JS and Ajax</p>
+            <hr>
+          </div>
+
+        <!-- End Right Column -->
+        </div>
+
+      <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div><h2 id="ds"class="w3-third">Data Science</h2>
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+
+        <!-- Left Column -->
+        <div class="w3-third">
+
+          <div class="w3-white w3-text-grey w3-card-4">
+            <div class="w3-display-container">
+              <img src="https://www.openaccessgovernment.org/wp-content/uploads/2019/06/dreamstime_m_140084029.jpg" style="width:100%" alt="Avatar">
+            </div>
+          </div><br>
+
+        <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+
+          <div class="w3-container"style="text-align: left; padding-left: 50px">
+            <h5 class="w3-opacity"><b>Project 1</b></h5>
+            <p>To be done</p>
+            <hr>
+            <h5 class="w3-opacity"><b>Project 1</b></h5>
+            <p>To be done</p>
+            <hr>
+
+          </div>
+
+        <!-- End Right Column -->
+        </div>
+
+      <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div><h2 id="f" class="w3-third">Finance</h2>
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+
+        <!-- Left Column -->
+        <div class="w3-third">
+
+          <div class="w3-white w3-text-grey w3-card-4">
+            <div class="w3-display-container">
+              <img src="https://www.financederivative.com/wp-content/uploads/2019/02/image-from-rawpixel-id-497090-jpeg.jpg" style="width:100%" alt="Avatar">
+            </div>
+          </div><br>
+
+        <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+
+          <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-right">
+
+            <div class="w3-container" style="text-align: left; padding-left: 50px">
+              <h5 class="w3-opacity"><b>Project 1</b></h5>
+              <p>To be done</p>
+              <hr>
+              <h5 class="w3-opacity"><b>Project 1</b></h5>
+              <p>To be done</p>
+              <hr>
+
+            </div>
+
+          </div>
+
+        <!-- End Right Column -->
+        </div>
+
+      <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div></div>
+
+
+<!-- Footer -->
+<footer id="contact"class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <h2>Contact</h2><br>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
